@@ -187,7 +187,7 @@ function printMenu(isInvalidOption, option) {
     console.log(`La opción '${option}' ingresada no es válida`);
   }
   console.log("================================================");
-  console.log("1. Ingresar usuario");
+  console.log("1. Ingresar usuario nuevo");
   console.log("2. Ver lista de usuarios");
   console.log("3. Buscar usuario por nombre");
   console.log("4. Salir");
