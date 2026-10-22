@@ -35,10 +35,10 @@ const getPokemon = async (id) => {
 
 const getPokemonList = async (offset = 0, limit = 10) => {
   const url = API_BASE.endsWith("/") ? API_BASE : API_BASE + "/";
-  const response = await axios.get(
-    `${url}pokemon?offset=${offset}&limit=${limit}`,
-  );
-  return response.data.results;
+  const {
+    data: { results },
+  } = await axios.get(`${url}pokemon?offset=${offset}&limit=${limit}`);
+  return results;
 };
 
 const printPokemonList = async () => {
